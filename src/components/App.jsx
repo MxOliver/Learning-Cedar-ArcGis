@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Landing from './Landing';
 
 class App extends Component {
@@ -7,7 +7,7 @@ class App extends Component {
   render(){
     return (
       <div>
-       <Router>
+       <BrowserRouter>
        <div className="App">
        <main className="content">
        <Switch>
@@ -15,7 +15,7 @@ class App extends Component {
        </Switch>
        </main>
        </div>
-       </Router>
+       </BrowserRouter>
       </div>
     );
   }
