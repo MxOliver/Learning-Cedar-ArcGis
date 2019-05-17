@@ -1,6 +1,6 @@
 ## Learning Cedar
 
-A small excersize in using Cedar and the ArcGis Services database, specifically the Wealthiest ZipCodes 2017 Feature Service, to create a simple bar graph.
+A small exercise in using Cedar and the ArcGis Services database, specifically the Wealthiest ZipCodes 2017 Feature Service, to create a simple bar graph.
 
 ## Local Configuration
 
