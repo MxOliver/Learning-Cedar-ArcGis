@@ -1,25 +1,12 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { alertActions } from '../actions/alertActions';
-import { history } from '../helpers/history'
 import { Router, Switch, Route } from 'react-router-dom'
 import Landing from './Landing';
 
-class ConnectedApp extends Component {
-  constructor(props){
-    super(props);
-
-    const { dispatch } = this.props;
-    history.listen((location, action) => {
-      dispatch(alertActions.clear())
-    })
-  }
-
+class App extends Component {
 
   render(){
     return (
       <div>
-       {alert.message && <div className={`alert ${alert.type}`}>{alert.message}</div>} 
        <Router history={history}>
        <div className="App">
        <main className="content">
@@ -35,13 +22,5 @@ class ConnectedApp extends Component {
 
 }
 
-function mapStateToProps(state) {
-  const { alert } = state;
-  return {
-    alert
-  }
-}
-
-const App = connect(mapStateToProps)(ConnectedApp);
 
 export default App;
