@@ -7,7 +7,7 @@ class App extends Component {
   render(){
     return (
       <div>
-       <Router history={history}>
+       <Router>
        <div className="App">
        <main className="content">
        <Switch>
